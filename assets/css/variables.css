@@ -1,0 +1,26 @@
+
+:root {
+    --color-primary: #42b883;
+    --color-secondary: #35495e;
+    --color-primary-contrast: #287251;
+    --color-alternative-bg: #cdcdcd;
+    --color-blur: #aaf7d3;
+    --color-hover: #8d8d8d;
+    --color-text: #dcdcdc;
+    --color-info-text: #44586e;
+   
+    
+
+    
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+
+
+}
+
+
+

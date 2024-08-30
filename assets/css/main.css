@@ -1,0 +1,528 @@
+
+@import url("./variables.css");
+
+
+
+
+body {
+    background-color: var(--color-alternative-bg)
+}
+
+/*Estilos de la cabecera*/
+
+.inicio {
+    background: linear-gradient(to right, #287251, #42b883);
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 47% 84%, 0 45%);
+    height: 90vh;
+    padding: 0 20%;
+}
+
+.inicio .contenido {
+    max-width: 1100px;
+    margin: auto;
+    color: var(--color-alternative-bg);
+}
+
+.inicio header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.inicio .logo {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    font-size: 25px;
+}
+
+.inicio .logo i {
+    display: inline-block;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.inicio .logo i:hover {
+    transform: scale(1.1);
+    color: var(--color-text);
+}
+
+.inicio header nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: color 0.3s ease;
+}
+
+#inicio header nav a:hover {
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.inicio .redes i {
+    color: var(--color-text);
+    font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.inicio .fila {
+    display: flex;
+    padding-bottom: 100px;
+    margin-top: 50px;
+}
+
+.inicio .fila .col h2 {
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.inicio .fila .col p {
+    margin-bottom: 10px;
+}
+
+.inicio .fila .col img {
+    max-width: 400px;
+    height: auto;
+}
+
+.inicio .fila .col .container-img img {
+    width: 60%;
+}
+
+.container-img img {
+    border: var(--color-text);
+    border-radius: 50%;
+    box-shadow: #44586e 3px 2px;
+}
+
+.inicio .fila .col .btn {
+    background-color: var(--color-secondary);
+    color: var(--color-alternative-bg);
+    width: fit-content;
+    padding: 5px 40px;
+    border: 2px solid var(--color-secondary);
+
+    cursor: pointer;
+}
+
+.inicio .fila .col .btn:hover {
+    background-color: var(--color-info-text);
+    transform: scale(1.1);
+
+}
+/**/
+#icono-nav {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+
+    display: none;
+}
+
+#icono-nav:hover {
+    background-color:var(--color-info-text);
+}
+
+.sombra {
+    filter: drop-shadow(1em 5px 5px var(--color-blur));
+}
+
+/*SECCION HABILIDADES*/
+
+.habilidades {
+    background: linear-gradient(to right, #287251, #42b883);
+    color: var(--color-secondary);
+    padding: 60px 0;
+    margin: auto;
+    position: relative;
+    top: -100px;
+}
+
+.habilidades h2 {
+    text-align: center;
+    color: var(--color-secondary);
+    transition: 1s;
+}
+
+.habilidades h2:hover {
+    transform: scale(1, 1.3);
+}
+
+.habilidades h3 {
+    color: var(--color-text);
+    text-align: center;
+
+    transition: 0.5s;
+}
+
+.habilidades h3:hover {
+    color: var(--color-secondary);
+    transform: scale(1, 1.3);
+}
+
+.habilidades .contenedor-habi {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.habilidades .fila {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skills {
+    padding: 10px;
+    margin: auto 0;
+}
+
+.skills.box {
+    width: 100%;
+}
+
+.skills .box h2 {
+    display: block;
+    text-align: center;
+}
+
+.skills .box .icon-hab {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sombra {
+    filter: drop-shadow(0em 5px 5px var(--color-blur));
+}
+
+.fa-brands {
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.fa-brands:hover {
+    font-size: 50px;
+    background-color: var(--color-secondary);
+}
+
+/*SECCION PROYECTOS*/
+
+.proyectos {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px 200px 20px;
+}
+
+.proyectos h2 {
+    color: var(--color-secondary);
+
+    text-align: center;
+    margin: 10px;
+    padding: 5px 0 0 0;
+}
+
+.proyectos h2:hover {
+    color: var(--color-hover);
+    font-size: 30px;
+
+ 
+}
+
+nav {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.proyectos nav a {
+    display: inline-block;
+    color: var(--color-primary);
+
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 3px solid transparent;
+
+    margin: 0 20px;
+    padding: 3px 10px;
+
+}
+
+.proyectos nav a:hover {
+    border: 3px solid var(--color-secondary);
+}
+
+/*Cuando se elija una opcion*/
+/*Link lleva a proyectos subidos a netlify */
+
+.borde {
+    border: 3px solid var(--color-blur);
+}
+
+.proyectos .galeria .item img {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.proyectos .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 30px;
+}
+
+.proyectos .galeria .item {
+    position: relative;
+    overflow: hidden;
+
+    height: 0;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10px;
+    padding-top: 70%;
+}
+
+.proyectos .galeria .item .info {
+    background-color: var(--color-text);
+
+    position: absolute;
+    top: -100%;
+    left: 0;
+    bottom: 0;
+
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.proyectos .galeria .item .info h3 {
+    color: var(--color-info-text);
+    margin-bottom: 20px;
+}
+
+.proyectos .galeria .item .info span {
+    color: var(--color-secondary);
+    display: inline-block;
+    border: 2px solid var(--color-primary-contrast);
+    margin: 0 3px;
+    padding: 0 5px;
+}
+
+.proyectos .galeria .item .info a {
+    display: block;
+
+    color: var(--color-primary);
+    font-weight: bold;
+
+    margin: 20px;
+    text-decoration: none;
+
+}
+
+.proyectos .galeria .item:hover .info {
+    opacity: 1;
+    top: 0;
+}
+
+/*  Formulario*/
+
+section #contacto {
+    background-color: var(--color-hover);
+}
+
+.formulario-container {
+    background: linear-gradient(to right, #42b883, #287251);
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    padding: auto;
+    border-radius: 5px;
+    filter: drop-shadow(0em 5px 5px var(--color-blur));
+}
+
+.form-control {
+    background-color: #cdcdcd;
+}
+
+h1 {
+    color: var(--color-info-text);
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--color-secondary);
+    color: #cdcdcd solid;
+
+    align-items: right;
+    margin: 20px;
+    padding: 10px 10px;
+    border: 10px;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color-info-text);
+    transform: scale(1.1);
+}
+
+
+
+/*Footer*/
+
+footer .container .footer-color {
+    text-align: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: var(--color-info-text);
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-alternative-bg);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--color-hover);
+}
+
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    .inicio {
+        clip-path: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .redes {
+        display: none;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    .responsive {
+        background-color:var(#8d8d8d);
+        position: absolute;
+
+        height: 100vh;
+        width: 100%;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+    }
+
+    #nav.responsive a {
+        font-size: 30px;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    .inicio {
+        height: auto;
+    }
+
+    .inicio .fila {
+        display: block;
+    }
+
+    .inicio .fila .col {
+        width: 100%;
+        text-align: center;
+    }
+
+    .inicio .fila .col h2 {
+        margin-top: 20px;
+    }
+
+    .inicio .fila .col .contenedor-img {
+        width: 50%;
+        margin-top: 30px;
+    }
+
+    .habilidades {
+        position: static;
+    }
+
+    .proyectos nav a {
+        margin: 0 5px;
+    }
+
+    #contacto {
+        display: block !important;
+
+        text-align: center;
+        width: 100% !important;
+
+        float: left;
+        font-size: 12px;
+        width: 25%;
+    }
+
+    #responsive-footer {
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        display: block;
+        font-size: 2px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .nav-link .nav-text {
+        color: var(--color-alternative-bg);
+        font-size: 10px;
+
+    }
+
+}
